@@ -29,7 +29,7 @@ $(document).ready(function(){
   $(".b-top").click(function(){
     let screenHeight = $(window).height();
     let cross2 = $(".cross2");
-    yShift -= 3;
+    yShift -= 30;
     cross2.animate({ top: getCross2Top() }, 300);
     setTimeout(function(){addShadow();}, 300);
   });
@@ -37,7 +37,7 @@ $(document).ready(function(){
   $(".b-bottom").click(function(){
     let screenHeight = $(window).height();
     let cross2 = $(".cross2");
-    yShift += 3;
+    yShift += 30;
     cross2.animate({ top: getCross2Top() }, 300);
     setTimeout(function(){addShadow();}, 300);
   });
@@ -45,7 +45,7 @@ $(document).ready(function(){
   $(".b-right").click(function(){
     let screenWidth = $(window).width();
     let cross2 = $(".cross2");
-    xShift += 3;
+    xShift += 30;
     cross2.animate({ left: getCross2Right() }, 300);
     setTimeout(function(){addShadow();}, 300);
   });
@@ -53,7 +53,7 @@ $(document).ready(function(){
   $(".b-left").click(function(){
     let screenWidth = $(window).width();
     let cross2 = $(".cross2");
-    xShift -= 3;
+    xShift -= 30;
     cross2.animate({ left: getCross2Right() }, 300);
     setTimeout(function(){addShadow();}, 300);
   });
