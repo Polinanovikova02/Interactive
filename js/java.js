@@ -71,7 +71,14 @@ $(document).ready(function(){
       $('body').css('background', 'linear-gradient(180deg, #000000 19.79%, #128BB6 100%)');
     }, 1800);
 
-    $(".circle1, .circle2, .circle3").addClass("entrance_surface");
+    setTimeout(function(){
+      $(".circle1, .circle2, .circle3").css('opacity', '1');
+    }, 2000);
+
+    $(".circle1").addClass("motion1");
+    $(".circle2").addClass("motion2");
+    $(".circle3").addClass("motion3");
+
     $(".triangle, .triangle2, .triangle3, .triangle4").addClass("entrance_surface");
     $(".line_centre, .centre").addClass("entrance_surface");
     $(".cross1, .cross2").addClass("entrance_surface");

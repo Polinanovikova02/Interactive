@@ -24,3 +24,32 @@
             @keyframes surface{
                 100% {opacity: 1;}
             }
+            .exit_white{animation: white_circle 1.8s linear forwards;}
+            @keyframes white_circle{
+                100% {transform: rotate(360deg); opacity: 0;}
+            }
+.entrance_surface{animation: surface 2s linear forwards;}
+            @keyframes surface{
+                100% {opacity: 1;}
+            }
+.motion1 {animation: motion1 3s linear alternate infinite;}
+            @keyframes motion1{
+                25%{transform: translate(-200px, -200px);}
+                50%{transform: translate(150px, 0px);}
+                75%{transform: translate(100px, 200px);}
+                100%{transform: translate(-150px, -100px);}
+            }
+.motion2 {animation: motion2 3s linear alternate infinite;}
+            @keyframes motion2{
+                25%{transform: translate(300px, 0px);}
+                50%{transform: translate(300px, 200px);}
+                75%{transform: translate(-200px, -150px);}
+                100%{transform: translate(100px, 100px);}
+            }
+.motion3 {animation: motion3 3s linear alternate infinite;}
+            @keyframes motion3{
+                25%{transform: translate(100px, -300px);}
+                50%{transform: translate(-200px, -600px);}
+                75%{transform: translate(-100px, 0px);}
+                100%{transform: translate(200px, 100px);}
+            }
