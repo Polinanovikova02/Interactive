@@ -1,0 +1,26 @@
+.exit_plane{ animation: plane 1.8s linear forwards;}
+            @keyframes plane{
+                0% {transform: scale(1); opacity: 1;}
+                80% {opacity: 1;}
+                100% {transform: scale(.1); opacity: 0;}
+            }
+.exit_opacity{ animation: opacity 1s linear forwards;}
+            @keyframes opacity{
+                0% {opacity: 1;}
+                100% {opacity: 0;}
+            }
+.blocker{display: none;}
+.exit_scale{animation: scale 1.8s linear forwards;}
+            @keyframes scale{
+                0% {transform: scale(1); opacity: 1;}
+                70% {opacity: 1;}
+                100% {transform: scale(1.5); opacity: 0;}
+            }
+.exit_white{animation: white_circle 1.8s linear forwards;}
+            @keyframes white_circle{
+                100% {transform: rotate(360deg); opacity: 0;}
+            }
+.entrance_surface{animation: surface 2s linear forwards;}
+            @keyframes surface{
+                100% {opacity: 1;}
+            }
